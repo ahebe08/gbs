@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 300px;
+        text-align: center;
+        position: relative; /* Add this line */
+    }
+
+    .checked-icon {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: -25px;
+        left: calc(50% - 25px);
+    }
+
+    .card-body {
+        font-size: 18px;
+        color: #333;
+    }
+
+</style>
+<body>
+    <div class="card">
+        <img src="../../img/checked.png" alt="Checked" class="checked-icon">
+        <div class="card-body">
+            Produit modifié avec succès !
+        </div>
+    </div>
+
+    <script>
+        // Attendre 2 secondes avant de rediriger
+        setTimeout(function() {
+            window.location.replace("../dashboard.php");
+        }, 2000);
+    </script>
+</body>
+</html>

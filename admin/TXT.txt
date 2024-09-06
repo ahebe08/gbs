@@ -1,0 +1,13 @@
+$directory = 'uploads/images/';
+
+// Vérifier si le répertoire existe déjà
+if (!is_dir($directory)) {
+    // Créer le répertoire avec les permissions 0777
+    if (mkdir($directory, 0777, true)) {
+        echo 'Le répertoire a été créé avec succès.';
+    } else {
+        echo 'Échec de la création du répertoire.';
+    }
+} else {
+    echo 'Le répertoire existe déjà.';
+}
