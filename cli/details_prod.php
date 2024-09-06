@@ -346,7 +346,7 @@
     <div class="bottom-bar">
         <a href="../cmde/new_cmde.php?id=<?php echo $produit['id_prod'];?>&idrp=<?php echo $id_rolepers;?>" class="add-to-cartt">Commander</a>
     </div>
-
+    <p>branch test</p>
     <script>
         let currentIndex = 0;
         const images = document.querySelectorAll('.carousel-images img');
